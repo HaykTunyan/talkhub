@@ -24,7 +24,7 @@ npm run dev
 
 ## Deploy with Vercel
 
-Deploy url [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+Deploy url [Vercel](https://vercel.com/hayktunyan/talkhub):
 
 
 
