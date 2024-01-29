@@ -11,23 +11,23 @@ import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
+  title: "Why Choose TalkHub",
+  desc: "Our platform is designed to be a dynamic hub where technology enthusiasts, learners, and experts converge to explore, discuss, and share knowledge in the ever-evolving world of technology.",
   image: benefitOneImg,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
-      icon: <FaceSmileIcon />,
+      title: "Inclusive Learning:",
+      desc: "We believe that technology is for everyone. Our platform is designed to be inclusive, catering to learners of all levels and backgrounds.",
+     icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Continuous Innovation:",
+      desc: "Stay ahead in the fast-paced world of technology by accessing the latest resources and participating in discussions that explore cutting-edge trends and innovations.",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Community-Driven:",
+      desc: "TalkHub thrives on community engagement. Join a vibrant community where knowledge is shared, questions are welcomed, and learning is a collaborative journey.",
       icon: <CursorArrowRaysIcon />,
     },
   ],

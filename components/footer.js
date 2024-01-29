@@ -2,8 +2,12 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Logo from "../public/icon/TalkhubLogo_vertical_dark.svg"
+
 
 export default function Footer() {
+
+
   const navigation = [
     "Product",
     "Features",
@@ -21,13 +25,13 @@ export default function Footer() {
               {" "}
               <Link href="/" className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
                     <Image
-                      src="/img/logo.svg"
+                      src={Logo}
                       alt="N"
                       width="32"
                       height="32"
                       className="w-8"
                     />
-                  <span>Nextly</span>
+                  <span>TalkHub</span>
               </Link>
             </div>
 
@@ -37,7 +41,7 @@ export default function Footer() {
               Next.js & TailwindCSS. And its completely open-source.
             </div>
 
-            <div className="mt-5">
+            {/* <div className="mt-5">
               <a
                 href="https://vercel.com/?utm_source=web3templates&utm_campaign=oss"
                 target="_blank"
@@ -50,7 +54,7 @@ export default function Footer() {
                   height="44"
                 />
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div>
@@ -105,7 +109,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-
+{/* 
         <div className="my-10 text-sm text-center text-gray-600 dark:text-gray-400">
           Copyright © {new Date().getFullYear()}. Made with ♥ by{" "}
           <a
@@ -121,10 +125,10 @@ export default function Footer() {
             rel="noopener ">
             Glazestock
           </a>
-        </div>
+        </div> */}
       </Container>
       {/* Do not remove this */}
-      <Backlink />
+      {/* <Backlink /> */}
     </div>
   );
 }
@@ -197,8 +201,6 @@ const Backlink = () => {
           fill="#F7FAFC"
         />
       </svg>
-
-      <span>Web3Templates</span>
     </a>
   );
 };

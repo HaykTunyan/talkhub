@@ -31,38 +31,31 @@ const Navbar = () => {
               <div className="flex flex-wrap items-center justify-between w-full lg:w-auto">
                 <Link href="/">
                   <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
-                    {/* <span>
 
-                      <Image
-                        src="/icon/favicon-32x32.png"
-                        alt="N"
-                        width="32"
-                        height="32"
-                        className="w-8"
-                      />
-                    </span> */}
                     {theme === "dark" ? (
                       <span>
                         <Image
-                          src="/icon/favicon-32x32.png"
+                          src="/icon/TalkhubLogo_vertical_light.svg"
                           alt="N"
-                          width="32"
-                          height="32"
-                          className="w-8"
+                          width="40"
+                          height="40"
+                          className="w-10"
                         />
                       </span>
                     ) : (
                       <span>
                         <Image
-                          src="/icon/favicon-light-32x32.png"
+                          src="/icon/TalkhubLogo_vertical_light.svg"
                           alt="N"
-                          width="32"
-                          height="32"
-                          className="w-8"
+                          width="40"
+                          height="40"
+                          className="w-10"
                         />
                       </span>
                     )}
-                    <span>TalkHub</span>
+                    <h1 className="text-2xl font-bold leading-snug tracking-tight text-gray-800 lg:text-4xl lg:leading-tight xl:text-4xl xl:leading-tight dark:text-white">
+                      TalkHub
+                    </h1>
                   </span>
                 </Link>
 

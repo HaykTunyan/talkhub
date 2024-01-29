@@ -3,6 +3,11 @@ import { useForm, useWatch } from "react-hook-form";
 import { Disclosure, Transition } from "@headlessui/react";
 
 const PopupWidget = () => {
+
+  /**
+   * Popup Widget Hooks. 
+   */
+
   const {
     register,
     handleSubmit,
@@ -12,13 +17,16 @@ const PopupWidget = () => {
   } = useForm({
     mode: "onTouched",
   });
+
   const [isSuccess, setIsSuccess] = useState(false);
   const [Message, setMessage] = useState("");
 
   const userName = useWatch({ control, name: "name", defaultValue: "Someone" });
 
   const onSubmit = async (data, e) => {
+
     console.log(data);
+
     await fetch("https://api.web3forms.com/submit", {
       method: "POST",
       headers: {
@@ -26,8 +34,7 @@ const PopupWidget = () => {
         Accept: "application/json",
       },
       body: JSON.stringify(data, null, 2),
-    })
-      .then(async (response) => {
+    }).then(async (response) => {
         let json = await response.json();
         if (json.success) {
           setIsSuccess(true);
@@ -104,6 +111,7 @@ const PopupWidget = () => {
               enterFrom="opacity-0 translate-y-5"
               leave="transition duration-200 transform ease"
               leaveTo="opacity-0 translate-y-5">
+
               <Disclosure.Panel className=" flex flex-col  overflow-hidden left-0 h-full w-full sm:w-[350px] min-h-[250px] sm:h-[600px] border border-gray-300 dark:border-gray-800 bg-white shadow-2xl rounded-md sm:max-h-[calc(100vh-120px)]">
                 <div className="flex flex-col items-center justify-center h-32 p-5 bg-indigo-600">
                   <h3 className="text-lg text-white">How can we help?</h3>
@@ -246,7 +254,7 @@ const PopupWidget = () => {
                           )}
                         </button>
                       </div>
-                      <p
+                      {/* <p
                         className="text-xs text-center text-gray-400"
                         id="result">
                         <span>
@@ -259,7 +267,7 @@ const PopupWidget = () => {
                             Web3Forms
                           </a>
                         </span>
-                      </p>
+                      </p> */}
                     </form>
                   )}
 
