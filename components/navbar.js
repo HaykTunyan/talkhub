@@ -1,12 +1,13 @@
 import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
+import SectionTitle from "../components/sectionTitle";
 import { Disclosure } from "@headlessui/react";
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
   /**
-   * Hooks.
+   *   Navabr Component Hooks.
    */
 
   const navigation = [
@@ -27,11 +28,6 @@ const Navbar = () => {
       title: "Listener",
       path: "/listener",
       description: "Learning and Updating Skills",
-    },
-    {
-      id: 4,
-      title: " Privacy Policy",
-      path: "/privacie",
     },
   ];
 
