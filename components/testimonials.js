@@ -1,11 +1,14 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-
-
 import CeoFunder from  "../public/img/ceo-founder.jpg";
 
 const Testimonials  = () => {
+
+  /**
+   * Test Monials Hooks.
+   */
+
   return (
     <Container>
       <div className="grid  gap-10 align-content:center  lg:grid-cols-2 xl:grid-cols-3">

@@ -8,3 +8,7 @@
     @apply dark:bg-trueGray-900;
   }
 }
+
+header {
+  @apply bg-purple-600
+}

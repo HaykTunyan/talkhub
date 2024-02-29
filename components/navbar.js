@@ -2,7 +2,8 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import SectionTitle from "../components/sectionTitle";
-import { Disclosure } from "@headlessui/react";
+import { Disclosure } from  "@headlessui/react"
+
 import { useTheme } from "next-themes";
 
 const Navbar = () => {
@@ -14,19 +15,19 @@ const Navbar = () => {
     {
       id: 1,
       title: "Employer",
-      path: "/employer",
+      path: "/coming-soon",  // employer
       description: "Create and Manage courses",
     },
     {
       id: 2,
       title: "Teacher",
-      path: "/teacher",
+      path: "/coming-soon", // teacher
       description: "Develop and Teach the course",
     },
     {
       id: 3,
       title: "Listener",
-      path: "/listener",
+      path: "/coming-soon", // listener
       description: "Learning and Updating Skills",
     },
   ];
@@ -34,7 +35,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <div className="w-full">
+    <header className="w-full">
       <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
@@ -101,7 +102,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.path}
-                        className="w-full px-4 py-2 -ml-4 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 font-semibold text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                       >
                         {item.title}
                       </Link>
@@ -123,7 +124,7 @@ const Navbar = () => {
                 <Link
                 
                   href={item.path}
-                  className="inline-block px-4 py-2 text-lg font-normal text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className="inline-block px-4 py-2 text-lg font-semibold text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {item.title}
                 </Link>
@@ -146,7 +147,7 @@ const Navbar = () => {
           <ThemeChanger />
         </div>
       </nav>
-    </div>
+    </header>
   );
 };
 

@@ -173,11 +173,11 @@ const Privacy = () => {
 
                         </div>
 
-                        <p class="normal-case mb-4"> 
+                        <p class="normal-case mb-4">
                             <strong>
                                 This Privacy Policy is subject to change without notice.
                             </strong>
-                         </p>
+                        </p>
 
                     </div>
                 </div>
