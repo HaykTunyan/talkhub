@@ -3,6 +3,11 @@ import Container from "./container";
 import heroImg from "../public/img/hero.png";
 
 const Hero = () => {
+
+  /**
+   * Hero Component Hooks.
+   */
+
   return (
     <>
       <Container className="flex flex-wrap ">

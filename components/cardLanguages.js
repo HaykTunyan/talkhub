@@ -15,6 +15,10 @@ import TypeScriptLogo from "../public/img/languages/Typescript.png";
 
 const CardLanguages  = () => {
 
+  /**
+   *  Card Languages Hooks.
+   */
+
     
   return (
     <Container>
@@ -59,7 +63,7 @@ const CardLanguages  = () => {
 
             <LogoPrograming
               image={TypeScriptLogo}
-              name="WebSite"
+              name="TypeScript"
               title="Join in the Middle Group"
             />
           </div>

@@ -7,9 +7,6 @@ const ContactCard = ({ name, email, imageUrl }) => {
    * Contact Card Hooks.
    */
 
-  console.log("imageUrl ", imageUrl )
-  console.log("email  ", email )
-
   return (
     <div className="rounded-lg shadow-md p-4">
       <div className="flex items-center">

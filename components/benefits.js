@@ -1,9 +1,16 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+// import BenefitComponent from  "./functionComponent/smallComponent";
 
 const Benefits = (props) => {
+
+  /**
+   *  Benefits Hooks.
+   */
+
   const { data } = props;
+
   return (
     <>
       <Container className="flex flex-wrap mb-20 lg:gap-10 lg:flex-nowrap ">
@@ -41,9 +48,9 @@ const Benefits = (props) => {
 
             <div className="w-full mt-5">
               {data.bullets.map((item, index) => (
-                <Benefit key={index} title={item.title} icon={item.icon}>
+                <BenefitComponent key={index} title={item.title} icon={item.icon}>
                   {item.desc}
-                </Benefit>
+                </BenefitComponent>
               ))}
             </div>
           </div>
@@ -53,7 +60,7 @@ const Benefits = (props) => {
   );
 };
 
-function Benefit(props) {
+function BenefitComponent(props) {
   return (
     <>
       <div className="flex items-start mt-8 space-x-3">

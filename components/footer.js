@@ -9,25 +9,40 @@ export default function Footer() {
 
 
   const navigation = [
-    "Product",
-    "Features",
-    "Pricing",
-    "Company",
-    "Blog",
+    {
+      title: 'Product',
+      href: '/',
+    },
+    {
+      title: 'Features',
+      href: '/',
+    },
+    {
+      title: 'Pricing',
+      href: '/',
+    },
+    {
+      title: 'Company',
+      href: '/',
+    },
+    {
+      title: 'Blog',
+      href: '/blog',
+    },
   ];
 
   const legal = [
     {
       title: 'Terms',
-      href: '/term',
+      href: '/coming-soon', // term
     },
     {
       title: 'Privacy Policy',
-      href: '/privacy',
+      href: '/privacy', // 
     },
     {
       title: 'Legal',
-      href: '/legal',
+      href: '/coming-soon', // legal
     }
   ];
 
@@ -58,8 +73,7 @@ export default function Footer() {
               {/* TalkHub is a platform for community building around your product or service.
                It allows users to create and join communities, share content in those communities, 
                and engage with each other through comments. */}
-
-
+               
             </div>
 
             {/* <div className="mt-5">
@@ -81,8 +95,8 @@ export default function Footer() {
           <div>
             <div className="flex flex-wrap w-full -mt-2 -ml-3 lg:ml-0">
               {navigation.map((item, index) => (
-                <Link key={index} href="/" className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
-                  {item}
+                <Link key={index} href={item.href} className="w-full px-4 py-2 text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-trueGray-700">
+                  {item.title}
                 </Link>
               ))}
             </div>
