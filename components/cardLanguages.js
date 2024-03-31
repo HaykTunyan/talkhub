@@ -12,6 +12,11 @@ import PythonLogo from  "../public/img/languages/Python_logo.png";
 import ReactLogo from "../public/img/languages/React_Logo.png";
 import TypeScriptLogo from "../public/img/languages/Typescript.png";
 
+import Development from  "../public/img/cours/development-computer-presentation.png";
+import Accounting from  "../public/img/cours/accounting.jpg";
+import Designe from '../public/img/cours/designe.jpg';
+import Languages from '../public/img/cours/language-school.png';  
+
 
 const CardLanguages  = () => {
 
@@ -22,96 +27,64 @@ const CardLanguages  = () => {
     
   return (
     <Container>
-      <div className="grid  gap-10 align-content:center  lg:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-20 align-content:center lg:grid-cols-2 xl:grid-cols-2">
 
-        {/* JavaScript */}
+        {/* Development */}
          <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>JavaScript</Mark> course, you'll want to follow these steps.
+              Make start the  <Mark>Development</Mark> course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
-              image={JSLogo}
-              name="JavaScript"
+              image={Development}
+              name="Development"
               title="Join in the Middle Group"
             />
           </div>
         </div>
 
-        {/* HTML and CSS */}
+        {/* Accounting */}
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Website</Mark> course, you'll want to follow these steps.
+              Make start the  <Mark>Accounting</Mark> course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
-              image={WEBLogo}
-              name="WebSite"
+              image={Accounting}
+              name="Accounting"
               title="Join in the Middle Group"
             />
           </div>
         </div>
 
-        {/* TypeScript */}
+        {/* Designe */}
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>TypeScript</Mark> course, you'll want to follow these steps.
+              Make start the  <Mark>Designe</Mark> course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
-              image={TypeScriptLogo}
-              name="TypeScript"
+              image={Designe}
+              name="Designe"
               title="Join in the Middle Group"
             />
           </div>
         </div>
      
-        {/* Node JS */}
+        {/* Languages */}
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Node  JS</Mark> course, you'll want to follow these steps.
+              Make start the  <Mark>Languages</Mark> course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
-              image={NodeLogo}
-              alt={"Node"}
-              name="Node JS"
-              title="Join in the Junior Group"
-            />
-          </div>
-        </div>
-
-        {/* React JS */}
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make start the  <Mark>React JS</Mark> course, you'll want to follow these steps.
-            </p>
-
-            <LogoPrograming
-              image={ReactLogo}
-              alt={"React"}
-              name="React JS"
-              title="Join in the Junior Group"
-            />
-          </div>
-        </div>
-
-        {/* Next JS */}
-        <div className="">
-          <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Next JS</Mark> course, you'll want to follow these steps:
-            </p>
-
-            <LogoPrograming
-              image={NextLogo}
-              alt={"Next"}
-              name="Next JS"
+              image={Languages}
+              alt={"Languages"}
+              name="Languages"
               title="Join in the Junior Group"
             />
           </div>
