@@ -18,7 +18,7 @@ const benefitOne = {
     {
       title: "Inclusive Learning:",
       desc: "We believe that technology is for everyone. Our platform is designed to be inclusive, catering to learners of all levels and backgrounds.",
-     icon: <FaceSmileIcon />,
+      icon: <FaceSmileIcon />,
     },
     {
       title: "Continuous Innovation:",
@@ -96,4 +96,4 @@ const benefitThree = {
 }
 
 
-export {benefitOne, benefitTwo , benefitThree };
+export { benefitOne, benefitTwo, benefitThree };

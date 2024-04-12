@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Navbar from "../../components/navbar";
 import Footer from "../../components/footer";
-import { useTheme } from "next-themes";
 import Container from "../../components/container";
 import SectionTitle from "../../components/sectionTitle";
 
@@ -9,8 +8,6 @@ const Privacy = () => {
     /**
      * Privacy Component Hooks.
      */
-
-    const { theme, setTheme } = useTheme();
 
     return (
         <>
@@ -29,18 +26,14 @@ const Privacy = () => {
                         This privacy policy sets out how our website uses and protects
                         any information that you give us when you use this website.
                     </SectionTitle>
-
                     <div className="mt-10" />
-                    <div className="flex  flex-col w-full ">
-
-                        <div className=" mb-8">
+                    <div className="flex flex-col w-full">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold leading-snug tracking-tight text-gray-800  lg:leading-tight  xl:leading-tight dark:text-white mb-2">
                                 Information We Collect
                             </h2>
                             <p className="mb-4">We may collect the following information:</p>
                             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-1xl dark:text-gray-300">
-
-
                                 <ul className="list-disc list-inside mb-4">
                                     <li>
                                         Your name and contact information</li>
@@ -51,8 +44,7 @@ const Privacy = () => {
                                 </ul>
                             </p>
                         </div>
-
-                        <div className=" mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold mb-2">
                                 How We Use the Information
                             </h2>
@@ -78,8 +70,7 @@ const Privacy = () => {
                                 </ul>
                             </p>
                         </div>
-
-                        <div className=" mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold mb-2">
                                 Security
                             </h2>
@@ -91,8 +82,7 @@ const Privacy = () => {
                                 online.
                             </p>
                         </div>
-
-                        <div className=" mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold mb-2">
                                 Cookies
                             </h2>
@@ -111,8 +101,7 @@ const Privacy = () => {
                                 share with us.
                             </p>
                         </div>
-
-                        <div className=" mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold mb-2">
                                 Links to Other Websites
                             </h2>
@@ -126,22 +115,15 @@ const Privacy = () => {
                                 statement. You should exercise caution and look at the privacy
                                 statement applicable to the website in question.
                             </p>
-
                         </div>
-
-                        <div className=" mb-8">
+                        <div className="mb-8">
                             <h2 className="text-2xl font-bold mb-2">
                                 Controlling Your Personal Information
                             </h2>
-
                             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-1xl dark:text-gray-300">
                                 You may choose to restrict the collection or use of your
                                 personal information in the following ways:
                             </p>
-
-
-
-
                             <p className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-1xl dark:text-gray-300">
                                 <ul className="list-disc list-inside mb-4">
                                     <li>
@@ -170,21 +152,15 @@ const Privacy = () => {
                                     </li>
                                 </ul>
                             </p>
-
                         </div>
-
                         <p class="normal-case mb-4">
                             <strong>
                                 This Privacy Policy is subject to change without notice.
                             </strong>
                         </p>
-
                     </div>
                 </div>
-
-
             </Container>
-
             <Footer />
         </>
     );

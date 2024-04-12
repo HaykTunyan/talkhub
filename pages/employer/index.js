@@ -21,9 +21,6 @@ const Employer = () => {
             <Navbar />
 
             <Container>
-                 
-                 
-
                 <div className="">
                     <section id="employer_page" className=" h-screen w-full flex items-center justify-around">
                         <div className="card ring-gray-50 ">
@@ -31,11 +28,8 @@ const Employer = () => {
                         </div>
                     </section>
                 </div>
-
             </Container>
-
             <Footer />
-
         </>
     );
 };

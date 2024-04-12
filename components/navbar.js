@@ -2,7 +2,7 @@ import Link from "next/link";
 import ThemeChanger from "./DarkSwitch";
 import Image from "next/image";
 import SectionTitle from "../components/sectionTitle";
-import { Disclosure } from  "@headlessui/react"
+import { Disclosure } from "@headlessui/react"
 
 import { useTheme } from "next-themes";
 
@@ -76,7 +76,7 @@ const Navbar = () => {
                     </h1>
                   </span>
                 </Link>
-                
+
                 <Disclosure.Button
                   aria-label="Toggle Menu"
                   className="px-2 py-1 ml-auto rounded-md lg:hidden hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:text-gray-300 dark:focus:bg-trueGray-700"
@@ -108,7 +108,7 @@ const Navbar = () => {
                       <Link
                         key={index}
                         href={item.path}
-                        className="w-full px-4 py-2 -ml-4 font-semibold text-gray-500 rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
+                        className="w-full px-4 py-2 -ml-4 font-semibold  rounded-md dark:text-gray-300 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 dark:focus:bg-gray-800 focus:outline-none"
                       >
                         {item.title}
                       </Link>
@@ -125,26 +125,25 @@ const Navbar = () => {
         <div className="hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((item, index) => (
-              <li className="mr-3 nav__item" 
-              data-tooltip-target="tooltip-default"
-              key={index}>
+              <li className="mr-3 nav__item"
+                data-tooltip-target="tooltip-default"
+                key={index}>
                 <Link
-                
                   href={item.path}
                   className="inline-block px-4 py-2 text-lg font-semibold text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
                 >
                   {item.title}
                 </Link>
 
-                  <div
-                    id="tooltip-default"
-                    role="tooltip"
-                    className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
-                  >
-                    Tooltip content
-                    <div className="tooltip-arrow" data-popper-arrow></div>
-                  </div>
-        
+                <div
+                  id="tooltip-default"
+                  role="tooltip"
+                  className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700"
+                >
+                  Tooltip content
+                  <div className="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
               </li>
             ))}
           </ul>

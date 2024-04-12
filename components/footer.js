@@ -2,8 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import Logo from "../public/icon/TalkhubLogo_vertical_dark.svg"
-
+import Logo from "../public/icon/TalkhubLogo_vertical_dark.svg";
 
 export default function Footer() {
 
@@ -71,7 +70,7 @@ export default function Footer() {
               {/* TalkHub is a platform for community building around your product or service.
                It allows users to create and join communities, share content in those communities, 
                and engage with each other through comments. */}
-               
+
             </div>
 
             {/* <div className="mt-5">

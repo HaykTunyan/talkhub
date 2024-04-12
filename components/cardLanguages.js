@@ -1,36 +1,32 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-
-
-import CeoFunder from  "../public/img/ceo-founder.jpg";
-import JSLogo from  "../public/img/languages/JavaScript.png";
+import CeoFunder from "../public/img/ceo-founder.jpg";
+import JSLogo from "../public/img/languages/JavaScript.png";
 import WEBLogo from "../public/img/languages/WEB.png";
 import NextLogo from "../public/img/languages/Nextjs-logo.jpg";
 import NodeLogo from "../public/img/languages/Node_logo.png";
-import PythonLogo from  "../public/img/languages/Python_logo.png";
+import PythonLogo from "../public/img/languages/Python_logo.png";
 import ReactLogo from "../public/img/languages/React_Logo.png";
 import TypeScriptLogo from "../public/img/languages/Typescript.png";
-
-import Development from  "../public/img/cours/development-computer-presentation.png";
-import Accounting from  "../public/img/cours/accounting.jpg";
+import Development from "../public/img/cours/development-computer-presentation.png";
+import Accounting from "../public/img/cours/accounting.jpg";
 import Designe from '../public/img/cours/designe.jpg';
-import Languages from '../public/img/cours/language-school.png';  
+import Languages from '../public/img/cours/language-school.png';
 
 
-const CardLanguages  = () => {
+const CardLanguages = () => {
 
   /**
    *  Card Languages Hooks.
    */
 
-    
   return (
     <Container>
       <div className="grid gap-20 align-content:center lg:grid-cols-2 xl:grid-cols-2">
 
         {/* Development */}
-         <div className="">
+        <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Make start the  <Mark>Development</Mark> course, you'll want to follow these steps.
@@ -73,7 +69,7 @@ const CardLanguages  = () => {
             />
           </div>
         </div>
-     
+
         {/* Languages */}
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
