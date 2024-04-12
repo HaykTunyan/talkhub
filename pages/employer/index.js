@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Navbar from "../../components/navbar";
-
 import { useTheme } from "next-themes";
+import Container from "../../components/container";
+import Footer from "../../components/footer";
 
 const Employer = () => {
     /**
@@ -19,16 +20,22 @@ const Employer = () => {
             </Head>
             <Navbar />
 
+            <Container>
+                 
+                 
 
-            <div className="">
-                <section id="employer_page" class="bg-gray-50 dark:bg-black h-screen w-full flex items-center justify-around">
-                    <div className="card ring-gray-50 ">
+                <div className="">
+                    <section id="employer_page" className=" h-screen w-full flex items-center justify-around">
+                        <div className="card ring-gray-50 ">
+                            <p> Employer </p>
+                        </div>
+                    </section>
+                </div>
 
-                        <p> Employer </p>
+            </Container>
 
-                    </div>
-                </section>
-            </div>
+            <Footer />
+
         </>
     );
 };
