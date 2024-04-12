@@ -21,10 +21,6 @@ const Listener = () => {
             <Navbar />
 
             <Container>
-
-            </Container>
-
-            <div className="">
                 <section
                     id="listener_page"
                     class="bg-gray-50 dark:bg-black h-screen w-full flex items-center justify-around"
@@ -33,9 +29,7 @@ const Listener = () => {
                         <p> Listener </p>
                     </div>
                 </section>
-            </div>
-
-
+            </Container>
             <Footer />
         </>
     );

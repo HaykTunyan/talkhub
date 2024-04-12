@@ -8,7 +8,7 @@ const Video = () => {
    */
 
   const [playVideo, setPlayVideo] = useState(false);
-  
+
   return (
     <Container>
       <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl ">

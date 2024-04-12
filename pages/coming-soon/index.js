@@ -18,7 +18,6 @@ const CommingSoon = () => {
         <link rel="icon" href="/icon/TalkhubLogoWithoutText.svg" />
       </Head>
       <Navbar />
-
       <div class="min-h-screen bg-gray-900 flex flex-col items-center justify-center">
         <h1 class="text-5xl text-purple-600 after:text-purple-400 font-bold mb-8 animate-pulse">
           Coming Soon

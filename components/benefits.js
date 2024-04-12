@@ -4,7 +4,6 @@ import Container from "./container";
 // import BenefitComponent from  "./functionComponent/smallComponent";
 
 const Benefits = (props) => {
-
   /**
    *  Benefits Hooks.
    */

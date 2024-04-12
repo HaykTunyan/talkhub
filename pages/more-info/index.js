@@ -1,19 +1,15 @@
 import Head from "next/head";
 import Navbar from "../../components/navbar";
-import { useTheme } from "next-themes";
 import Container from "../../components/container";
 import Footer from "../../components/footer";
 import SectionTitle from "../../components/sectionTitle";
-import { benefitOne, benefitTwo, benefitThree } from "../../components/data";
+import { benefitThree } from "../../components/data";
 import Benefits from "../../components/benefits";
-import Image from "next/image";
 
 const MoreInfo = () => {
     /**
      *  More Info Components Hooks.
      */
-
-    const { theme, setTheme } = useTheme();
 
     return (
         <>
@@ -63,11 +59,9 @@ const MoreInfo = () => {
                             With TalkHub, you're not just acquiring knowledge; you're embarking on a transformative learning experience that empowers you to excel in today's competitive business landscape.
                         </p>
                     </div>
-                </div>    
+                </div>
             </Container>
-
             <Benefits data={benefitThree} />
-
             <Footer />
 
         </>

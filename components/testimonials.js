@@ -1,9 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
-import CeoFunder from  "../public/img/ceo-founder.jpg";
+import CeoFunder from "../public/img/ceo-founder.jpg";
 
-const Testimonials  = () => {
+const Testimonials = () => {
 
   /**
    * Test Monials Hooks.
@@ -12,7 +12,7 @@ const Testimonials  = () => {
   return (
     <Container>
       <div className="grid  gap-10 align-content:center  lg:grid-cols-2 xl:grid-cols-3">
-         <div className="">
+        <div className="">
           {/* <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
               Make sure you only pick the <Mark>right sentence</Mark>
@@ -40,7 +40,7 @@ const Testimonials  = () => {
             />
           </div>
         </div>
-       
+
         <div className="">
           {/* <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">

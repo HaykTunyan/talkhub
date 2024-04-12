@@ -3,6 +3,7 @@ import Container from "./container";
 import Image from "next/image";
 
 const ContactCard = ({ name, email, imageUrl }) => {
+  
   /**
    * Contact Card Hooks.
    */

@@ -5,7 +5,6 @@ import Container from "../../components/container";
 import SectionTitle from "../../components/sectionTitle";
 import Image from "next/image";
 import SevenDay from "../../public/pdf/7-day.png";
-
 import { useTheme } from "next-themes";
 
 const Books = () => {
@@ -41,7 +40,6 @@ const Books = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="grid gap-10 lg:grid-cols-3 xl:grid-cols-3">
                     <div className="lg:col-span-2 xl:col-auto">
                         <div className="flex flex-col  w-full h-full ">
@@ -72,7 +70,7 @@ const Books = () => {
                     </div>
                 </div>
             </Container>
-            
+
             <Footer />
         </>
     );
