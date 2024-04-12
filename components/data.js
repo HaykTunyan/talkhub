@@ -57,4 +57,43 @@ const benefitTwo = {
 };
 
 
-export {benefitOne, benefitTwo};
+const benefitThree = {
+  title: 'Additional information about TalkHub',
+  desc: "Overall, TalkHub is not just a learning platform; it's a catalyst for personal and professional growth, empowering individuals and organizations to thrive in today's rapidly evolving business landscape.",
+  image: benefitTwoImg,
+  bullets: [
+    {
+      title: "Cutting-edge Technology:",
+      desc: " TalkHub harnesses the power of cutting-edge technology to deliver a seamless and immersive learning experience. Our platform utilizes state-of-the-art features such as interactive simulations, virtual classrooms, and gamified learning modules to enhance engagement and retention.",
+      icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Global Reach:",
+      desc: "With TalkHub, geographical barriers no longer limit access to quality education. Our platform is accessible worldwide, enabling learners from diverse backgrounds and locations to connect and collaborate in a global learning community.",
+      icon: <AdjustmentsHorizontalIcon />,
+    },
+    {
+      title: "Industry-Relevant Content: ",
+      desc: "Our course offerings are meticulously curated to align with the latest industry trends and demands. Whether it's digital marketing, finance, project management, or leadership development, TalkHub's courses are designed to equip learners with practical skills and knowledge that are directly applicable in today's competitive business landscape.",
+      icon: <CursorArrowRaysIcon />,
+    },
+    {
+      title: " Community Engagement:",
+      desc: "TalkHub fosters a vibrant learning community where learners can connect, collaborate, and exchange ideas. Through discussion forums, peer-to-peer networking opportunities, and collaborative projects, users have the chance to learn from each other and build valuable professional relationships.",
+      icon: <ChartBarSquareIcon />,
+    },
+    {
+      title: "Continuous Improvement:",
+      desc: " At TalkHub, we are committed to continuous improvement and innovation. We regularly update our course offerings, incorporate user feedback, and leverage data analytics to ensure that our platform remains at the forefront of online education.",
+      icon: <SunIcon />,
+    },
+    {
+      title: "Affordable Pricing:",
+      desc: "We believe that education should be accessible to all, which is why TalkHub offers competitive pricing plans and flexible payment options. Whether you're an individual learner or an organization seeking corporate training solutions, TalkHub provides affordable options to suit your budget and needs.",
+      icon: <FaceSmileIcon />,
+    },
+  ],
+}
+
+
+export {benefitOne, benefitTwo , benefitThree };

@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Navbar from "../../components/navbar";
-
+import Footer from "../../components/footer";
 import { useTheme } from "next-themes";
+import Container from "../../components/container";
 
 const Listener = () => {
     /**
@@ -19,6 +20,10 @@ const Listener = () => {
             </Head>
             <Navbar />
 
+            <Container>
+
+            </Container>
+
             <div className="">
                 <section
                     id="listener_page"
@@ -29,6 +34,9 @@ const Listener = () => {
                     </div>
                 </section>
             </div>
+
+
+            <Footer />
         </>
     );
 };
