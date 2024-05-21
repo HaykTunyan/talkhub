@@ -17,7 +17,7 @@ import { changeLanguage } from "i18next";
 import Container from "../components/container";
 import { useTranslation, Translation  } from 'react-i18next';
 import Video from 'next-video';
-import useVideo from "../videos/TalkHub.mp4";
+// import useVideo from "../videos/TalkHub.mp4";
 
 // import { useTranslations } from "next-intl";
 
