@@ -1,7 +1,5 @@
 // Middleware Files.
 
-// import createMiddleware from 'next-intl/middleware';
-
 import createMiddleware from  'next-intl';
 
 const middleware = createMiddleware({

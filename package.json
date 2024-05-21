@@ -4,7 +4,7 @@
   "description": "Nextly Landing Page Template",
   "private": true,
   "scripts": {
-    "dev": "next dev & npx next-video sync -w",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
@@ -28,7 +28,6 @@
     "@heroicons/react": "^2.0.17",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "i18next": "^23.11.3",
-    "i18next-browser-languagedetector": "^7.2.1",
     "next": "^13.3.1",
     "next-i18next": "^15.3.0",
     "next-intl": "^3.12.0",
