@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import Link from "next/link";
 import CeoFunder from "../public/img/ceo-founder.jpg";
 import JSLogo from "../public/img/languages/JavaScript.png";
 import WEBLogo from "../public/img/languages/WEB.png";
@@ -29,9 +30,12 @@ const CardLanguages = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Development</Mark> course, you'll want to follow these steps.
+              Make start the
+              <Link href="/devpage">
+                <Mark>Development</Mark>
+              </Link>
+              course, you'll want to follow these steps.
             </p>
-
             <LogoPrograming
               image={Development}
               name="Development"
@@ -44,7 +48,11 @@ const CardLanguages = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Accounting</Mark> course, you'll want to follow these steps.
+              Make start the 
+              <Link href="/accounting">
+              <Mark>Accounting</Mark>
+              </Link>
+                course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
@@ -59,7 +67,11 @@ const CardLanguages = () => {
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Designe</Mark> course, you'll want to follow these steps.
+              Make start the 
+              <Link href="/designpage">
+                <Mark>Designe</Mark>
+              </Link>
+              course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming
@@ -73,8 +85,12 @@ const CardLanguages = () => {
         {/* Languages */}
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
-            <p className="text-2xl leading-normal ">
-              Make start the  <Mark>Languages</Mark> course, you'll want to follow these steps.
+            <p className="text-2xl leading-normal">
+              Make start the 
+              <Link href='/languagepage'>
+                <Mark>Languages</Mark>
+              </Link>
+                course, you'll want to follow these steps.
             </p>
 
             <LogoPrograming

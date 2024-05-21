@@ -76,7 +76,7 @@ export const Backlink = () => {
 export const TwitterIcon = () => {
   <svg
     fill="currentColor"
-    class="cursor-pointer h-10 mr-2"
+    className="cursor-pointer h-10 mr-2"
     viewBox="0 0 24 24"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,7 @@ export const TwitterIcon = () => {
 export const FacebookIcon = () => {
   <svg
     fill="currentColor"
-    class="cursor-pointer h-10 mr-2"
+    className="cursor-pointer h-10 mr-2"
     viewBox="0 0 24 24"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +131,7 @@ export const FacebookIcon = () => {
 export const Shape = () => {
   <svg
     fill="currentColor"
-    class="cursor-pointer h-10 mr-2"
+    className="cursor-pointer h-10 mr-2"
     viewBox="0 0 24 24"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"
@@ -163,7 +163,7 @@ export const Shape = () => {
 export const CombinedShape = () => {
   <svg
     fill="currentColor"
-    class="cursor-pointer h-10 mr-2"
+    className="cursor-pointer h-10 mr-2"
     viewBox="0 0 24 24"
     version="1.1"
     xmlns="http://www.w3.org/2000/svg"

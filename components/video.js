@@ -1,7 +1,10 @@
 import { useState } from "react";
 import Container from "./container";
+import Video from 'next-video';
+// import useVideo from "@/videos/TalkHub.mp4";
 
-const Video = () => {
+
+const VideoComponent = () => {
 
   /**
    *  Video Component Hooks.
@@ -12,6 +15,7 @@ const Video = () => {
   return (
     <Container>
       <div className="w-full max-w-4xl mx-auto overflow-hidden lg:mb-20 rounded-2xl ">
+
         <div
           onClick={() => setPlayVideo(!playVideo)}
           className="relative bg-indigo-300 cursor-pointer aspect-w-16 aspect-h-9 bg-gradient-to-tr from-purple-400 to-indigo-700">
@@ -31,18 +35,32 @@ const Video = () => {
               <span className="sr-only">Play Video</span>
             </button>
           )}
-          {/* {playVideo && (
-            <iframe
-              src="public/video/video_one.mp4"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          )} */}
+          {playVideo && (
+
+<video controls autoPlay>
+<source src="https://www.youtube.com/watch?v=ZNYJybhMSLA" type="video/mp4" />
+Your browser does not support the video tag.
+</video>
+
+            // <iframe
+            //   src="https://www.youtube.com/watch?v=ZNYJybhMSLA?controls=0&autoplay=1"
+            //   title="YouTube video player"
+            //   frameBorder="0"
+            //   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            //   allowfullscreen></iframe>
+          )}
         </div>
+
+        <div className="w-full mt-10">
+          <video controls autoPlay>
+          <source src="./Learning_Talkhub.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
       </div>
     </Container>
   );
 }
 
-export default Video;
+export default VideoComponent;

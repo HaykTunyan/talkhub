@@ -1,0 +1,12 @@
+{
+    "landing": {
+		"confirmCancelPlanCreation": "Are you sure you want to cancel plan creation?",
+		"confirmCancelServiceCreation": "Are you sure you want to cancel creating the service?",
+		"unsavedDataWillBeLost": "All unsaved data will be lost."
+	},
+
+    "welcome": "Բարի գալուստ",
+    "hello": "Բարեւ",
+    "banner_titile": "Ձեր Պրեմիեր առցանց և անցանց ուսուցման հարթակը"
+
+}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Container from "./container";
+import { useTranslation, Translation  } from 'react-i18next';
 // import BenefitComponent from  "./functionComponent/smallComponent";
 
 const Benefits = (props) => {
@@ -9,6 +10,8 @@ const Benefits = (props) => {
    */
 
   const { data } = props;
+
+  const { t, i18n } = useTranslation();
 
   return (
     <>

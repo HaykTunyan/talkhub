@@ -15,7 +15,7 @@ const Teacher = () => {
       </Head>
       <Navbar />
       <div className="">
-        <section id="teacher_page" class="bg-gray-50 dark:bg-black h-screen w-full flex items-center justify-around">
+        <section id="teacher_page" className="bg-gray-50 dark:bg-black h-screen w-full flex items-center justify-around">
             <div className="card ring-gray-50 ">
                 <p> Teacher </p>
             </div>
