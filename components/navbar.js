@@ -5,6 +5,7 @@ import SectionTitle from "../components/sectionTitle";
 import { Disclosure } from "@headlessui/react"
 
 import { useTheme } from "next-themes";
+import LangagesChanger from "./LangagesSwitch";
 
 const Navbar = () => {
   /**
@@ -21,7 +22,7 @@ const Navbar = () => {
     {
       id: 2,
       title: "Listener",
-      path: "/listener", // listener
+      path: "/coming-soon", // listener
       description: "Learning and Updating Skills",
     },
     {
@@ -151,6 +152,8 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <ThemeChanger />
+
+          <LangagesChanger />
         </div>
       </nav>
     </header>

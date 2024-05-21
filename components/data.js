@@ -6,12 +6,15 @@ import {
   AdjustmentsHorizontalIcon,
   SunIcon,
 } from "@heroicons/react/24/solid";
+import { useTranslation, Translation  } from 'react-i18next';
+
+
 
 import benefitOneImg from "../public/img/benefit-one.png";
 import benefitTwoImg from "../public/img/benefit-two.png";
 
 const benefitOne = {
-  title: "Why Choose TalkHub",
+  title: `Why Choose TalkHub` ,
   desc: "Our platform is designed to be a dynamic hub where technology enthusiasts, learners, and experts converge to explore, discuss, and share knowledge in the ever-evolving world of technology.",
   image: benefitOneImg,
   bullets: [

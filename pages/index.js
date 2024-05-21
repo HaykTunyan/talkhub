@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 import Navbar from "../components/navbar";
 import SectionTitle from "../components/sectionTitle";
 import { benefitOne, benefitTwo } from "../components/data";
-// import Video from "../components/video";
+import VideoComponent from "../components/video";
 import Benefits from "../components/benefits";
 import Footer from "../components/footer";
 // import Testimonials from "../components/testimonials";
@@ -13,13 +13,31 @@ import Footer from "../components/footer";
 import CardLanguages from "../components/cardLanguages";
 // import ContactCard from "../components/contactCard";
 import { useTheme } from "next-themes";
+import { changeLanguage } from "i18next";
+import Container from "../components/container";
+import { useTranslation, Translation  } from 'react-i18next';
+import Video from 'next-video';
+import useVideo from "../videos/TalkHub.mp4";
+
+// import { useTranslations } from "next-intl";
+
+const lang = {
+  en: { nativeName: "English" },
+  am: { nativeName: 'Հայերեն' },
+}
 
 const Home = () => {
   /**
    *  Home Components Hooks.
    */
 
-  const { theme, setTheme } = useTheme();
+  const { t, i18n } = useTranslation();
+
+  // const { theme, setTheme } = useTheme();
+
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+  };
 
   return (
     <>
@@ -32,25 +50,24 @@ const Home = () => {
       <Hero />
       <SectionTitle
         pretitle=""
-        title="Empowering Aspirants in the World of Technology"
+        title={t('banner_title')}
       >
-        At TalkHub, we are driven by a simple yet powerful mission. to empower
-        new aspirants to learn, contribute, and seize exciting opportunities in
-        the ever-evolving world of technology. In an era where technology is at
-        the forefront of innovation and progress, we believe that everyone
-        should have the chance to embark on a journey of discovery and growth.
+        {t('empowering_aspirants_descriptions')}
       </SectionTitle>
+      
       <Benefits data={benefitOne} />
       {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       <SectionTitle
-        pretitle="Meet Our Team:"
-        title="How To Start in TalkHub"
+        pretitle=""
+        title={t('why_choose_talkhub')} 
       >
-        🚀 Dive into a world where technology meets community at TalkHub – your go-to platform for all things tech
+        🚀 {t('drive_into_a_world')}
       </SectionTitle>
       {/*  */}
       <CardLanguages />
-      {/* <Video /> */}
+      {/* <VideoComponent /> */}
+
+
       {/* <SectionTitle
         pretitle="Testimonials"
         title="Here's what our customers said"
