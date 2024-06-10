@@ -69,7 +69,7 @@ const CardLanguages = () => {
             <p className="text-2xl leading-normal ">
               Make start the 
               <Link href="/designpage">
-                <Mark>Designe</Mark>
+                <Mark>Design</Mark>
               </Link>
               course, you'll want to follow these steps.
             </p>
