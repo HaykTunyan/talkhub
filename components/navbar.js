@@ -25,12 +25,12 @@ const Navbar = () => {
       path: "/coming-soon", // listener
       description: "Learning and Updating Skills",
     },
-    {
-      id: 3,
-      title: "Books",
-      path: "/books", // Books
-      description: "Learning and Updating Skills",
-    },
+    // {
+    //   id: 3,
+    //   title: "Books",
+    //   path: "/books",
+    //   description: "Learning and Updating Skills",
+    // },
     {
       id: 4,
       title: "More Info",

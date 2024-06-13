@@ -52,7 +52,7 @@ const CardLanguages = () => {
               <Link href="/accounting">
               <Mark>Accounting</Mark>
               </Link>
-                course, you'll want to follow these steps.
+                course, you'll want to follow these steps.   
             </p>
 
             <LogoPrograming
@@ -69,7 +69,7 @@ const CardLanguages = () => {
             <p className="text-2xl leading-normal ">
               Make start the 
               <Link href="/designpage">
-                <Mark>Designe</Mark>
+                <Mark>Design</Mark>
               </Link>
               course, you'll want to follow these steps.
             </p>
@@ -79,6 +79,9 @@ const CardLanguages = () => {
               name="Designe"
               title="Join in the Middle Group"
             />
+            <div className="">
+              Join to Group 
+            </div>
           </div>
         </div>
 

@@ -16,8 +16,8 @@ import { useTheme } from "next-themes";
 import { changeLanguage } from "i18next";
 import Container from "../components/container";
 import { useTranslation, Translation  } from 'react-i18next';
-import Video from 'next-video';
-import useVideo from "../videos/TalkHub.mp4";
+// import Video from 'next-video';
+// import useVideo from "../videos/TalkHub.mp4";
 
 // import { useTranslations } from "next-intl";
 
@@ -50,18 +50,18 @@ const Home = () => {
       <Hero />
       <SectionTitle
         pretitle=""
-        title={t('banner_title')}
+        title={'Your Premier Online and Offline Learning Platform'}
       >
-        {t('empowering_aspirants_descriptions')}
+        At TalkHub, we are driven by a simple yet powerful mission. to empower new aspirants to learn, contribute, and seize exciting opportunities in the ever-evolving world of technology. In an era where technology is at the forefront of innovation and progress, we believe that everyone should have the chance to embark on a journey of discovery and growth
       </SectionTitle>
       
       <Benefits data={benefitOne} />
       {/* <Benefits imgPos="right" data={benefitTwo} /> */}
       <SectionTitle
         pretitle=""
-        title={t('why_choose_talkhub')} 
+        title={'Why Choose TalkHub'} 
       >
-        🚀 {t('drive_into_a_world')}
+        🚀 Dive into a world where technology meets community at TalkHub – your go-to platform for all things tech
       </SectionTitle>
       {/*  */}
       <CardLanguages />
