@@ -41,7 +41,7 @@ const LangagesChanger = () => {
                 </svg>
             </button> */}
             <button
-                onClick={() => changeLanguage('en')}
+                // onClick={() => changeLanguage('en')}
                 className="rounded-full outline-none focus:outline-none focus-visible:ring focus-visible:ring-gray-100 focus:ring-opacity-20">
           
                <img src="https://img.icons8.com/?size=512&id=t3NE3BsOAQwq&format=png" alt="format" className="w-7 h-7" />
