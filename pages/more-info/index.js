@@ -13,16 +13,7 @@ const MoreInfo = () => {
 
     return (
         <>
-            <Head>
-                <title>TalkHub</title>
-                <meta name="description" content="TalkHub Website" />
-                <link rel="icon" href="/icon/TalkhubLogoWithoutText.svg" />
-            </Head>
-            <Navbar />
-
             <Container>
-                <div className="mt-36" />
-
                 <div className="max-w-screen">
                     <SectionTitle
                         pretitle="More Info"
@@ -45,9 +36,7 @@ const MoreInfo = () => {
                         </div>
                     </div>
                 </div>
-
                 <div className="mt-28" />
-
                 <div className="max-w-screen">
                     <div className="mt-10">
                         <p className="text-xl font-bold leading-snug tracking-tight text-gray-800  lg:leading-tight  xl:leading-tight dark:text-white mb-2">
@@ -62,8 +51,6 @@ const MoreInfo = () => {
                 </div>
             </Container>
             <Benefits data={benefitThree} />
-            <Footer />
-
         </>
     );
 };

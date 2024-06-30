@@ -9,7 +9,7 @@ import Footer from "../components/footer";
 // import Testimonials from "../components/testimonials";
 // import Cta from "../components/cta";
 // import Faq from "../components/faq";
-// import PopupWidget from "../components/popupWidget";
+import PopupWidget from "../components/popupWidget";
 import CardLanguages from "../components/cardLanguages";
 // import ContactCard from "../components/contactCard";
 import { useTheme } from "next-themes";
@@ -41,12 +41,12 @@ const Home = () => {
 
   return (
     <>
-      <Head>
+      {/* <Head>
         <title>TalkHub</title>
         <meta name="description" content="TalkHub Website" />
         <link rel="icon" href="/icon/TalkhubLogoWithoutText.svg" />
       </Head>
-      <Navbar />
+      <Navbar /> */}
       <Hero />
       <SectionTitle
         pretitle=""
@@ -82,8 +82,8 @@ const Home = () => {
       </SectionTitle> */}
       {/* <Faq /> */}
       {/* <Cta /> */}
-      <Footer />
-      {/* <PopupWidget /> */}
+      {/* <Footer /> */}
+      <PopupWidget />
     </>
   );
 };
