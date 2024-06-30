@@ -25,24 +25,42 @@ const Navbar = () => {
       path: "/coming-soon", // listener
       description: "Learning and Updating Skills",
     },
-    // {
-    //   id: 3,
-    //   title: "Books",
-    //   path: "/books",
-    //   description: "Learning and Updating Skills",
-    // },
+    {
+      id: 3,
+      title: "Blog",
+      path: "/blog",
+      description: "Learning and Updating Skills",
+    },
     {
       id: 4,
       title: "More Info",
       path: "/more-info", // more-info
       description: "Learning and Updating Skills",
     },
+    // {
+    //   id: 5,
+    //   title: "Courses",
+    //   path: "/courses",
+    //   description: "Learning and Updating Skills",
+    // },
+    // {
+    //   id: 6,
+    //   title: "Designpage",
+    //   path: "/designpage",
+    //   description: "Learning and Updating Skills",
+    // },
+    // {
+    //   id: 7,
+    //   title: "Planing",
+    //   path: "/planing", // more-info
+    //   description: "Learning and Updating Skills",
+    // }
   ];
 
   const { theme, setTheme } = useTheme();
 
   return (
-    <header className="w-full fixed">
+    <header className="w-full fixed z-50">
       <nav className="container  flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
         {/* Logo  */}
         <Disclosure>
