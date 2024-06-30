@@ -7,4 +7,5 @@ module.exports = {
     defaultLocale: "en",
   },
   output: "standalone",
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 };
