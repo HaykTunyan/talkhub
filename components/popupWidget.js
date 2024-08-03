@@ -27,7 +27,9 @@ const PopupWidget = () => {
 
     console.log(data);
 
-    await fetch("https://api.web3forms.com/submit", {
+    //'/api/send-email',
+    // https://api.web3forms.com/submit
+    await fetch("https://api/send-email", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

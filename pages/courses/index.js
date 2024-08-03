@@ -20,7 +20,7 @@ const Courses = () => {
                 >
                     At TalkHub, we are dedicated to providing top-notch courses that empower you to learn, contribute, and seize exciting opportunities in the ever-evolving world of technology. Whether you're looking to enhance your skills or start a new career, our courses are designed to guide you through your journey of discovery and growth.
                 </SectionTitle>
-                <CardLanguages />
+                {/* <CardLanguages /> */}
                 <div className="mt-10">
                     <CoursesItem />
                 </div>
