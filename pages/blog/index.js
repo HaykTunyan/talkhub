@@ -18,7 +18,7 @@ const Blog = () => {
             </Head>
             <Navbar />
             <Container>
-
+                {/* Post One  */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto">
                         <h1 className="text-3xl font-bold mb-2">Blog post Talk Hub</h1>
@@ -50,6 +50,7 @@ const Blog = () => {
                     </div>
                 </div>
                 <div className="pt-10" />
+                {/* Post Two */}
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="max-w-3xl mx-auto">
                         <div className="py-8">

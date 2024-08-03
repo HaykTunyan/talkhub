@@ -37,24 +37,24 @@ const Navbar = () => {
       path: "/more-info", // more-info
       description: "Learning and Updating Skills",
     },
-    // {
-    //   id: 5,
-    //   title: "Courses",
-    //   path: "/courses",
-    //   description: "Learning and Updating Skills",
-    // },
+    {
+      id: 5,
+      title: "Courses",
+      path: "/courses",
+      description: "Learning and Updating Skills",
+    },
     // {
     //   id: 6,
     //   title: "Designpage",
     //   path: "/designpage",
     //   description: "Learning and Updating Skills",
     // },
-    // {
-    //   id: 7,
-    //   title: "Planing",
-    //   path: "/planing", // more-info
-    //   description: "Learning and Updating Skills",
-    // }
+    {
+      id: 7,
+      title: "Planing",
+      path: "/planing", // more-info
+      description: "Learning and Updating Skills",
+    }
   ];
 
   const { theme, setTheme } = useTheme();
