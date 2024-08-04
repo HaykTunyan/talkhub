@@ -13,12 +13,7 @@ const Listener = () => {
 
     return (
         <>
-            <Head>
-                <title>TalkHub</title>
-                <meta name="description" content="TalkHub Website" />
-                <link rel="icon" href="/icon/TalkhubLogoWithoutText.svg" />
-            </Head>
-            <Navbar />
+
 
             <Container>
                 <section
@@ -30,7 +25,7 @@ const Listener = () => {
                     </div>
                 </section>
             </Container>
-            <Footer />
+
         </>
     );
 };

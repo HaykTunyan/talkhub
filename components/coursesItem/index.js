@@ -70,7 +70,7 @@ const CoursesItem = () => {
             <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">
                 Explore Our Courses
             </h2>
-            <div className="grid gap-5 align-content:center  grid-cols-2 md:grid-cols-2  lg:grid-cols-4 xl:grid-cols-4">
+            <div className="grid gap-5 align-content:center  grid-cols-1 md:grid-cols-2  lg:grid-cols-4 xl:grid-cols-4">
                 {courses.map((course) => (
                     <div
                         key={course.id}
