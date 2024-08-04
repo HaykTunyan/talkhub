@@ -13,12 +13,6 @@ const Employer = () => {
 
     return (
         <>
-            <Head>
-                <title>TalkHub</title>
-                <meta name="description" content="TalkHub Website" />
-                <link rel="icon" href="/icon/TalkhubLogoWithoutText.svg" />
-            </Head>
-            <Navbar />
 
             <Container>
                 <div className="">
@@ -29,7 +23,7 @@ const Employer = () => {
                     </section>
                 </div>
             </Container>
-            <Footer />
+
         </>
     );
 };

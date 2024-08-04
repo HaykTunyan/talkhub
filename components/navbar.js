@@ -6,6 +6,7 @@ import { Disclosure } from "@headlessui/react"
 
 import { useTheme } from "next-themes";
 import LangagesChanger from "./LangagesSwitch";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   /**
@@ -13,18 +14,18 @@ const Navbar = () => {
    */
 
   const navigation = [
-    {
-      id: 1,
-      title: "Employer",
-      path: "/coming-soon",  // employer
-      description: "Create and Manage courses",
-    },
-    {
-      id: 2,
-      title: "Listener",
-      path: "/coming-soon", // listener
-      description: "Learning and Updating Skills",
-    },
+    // {
+    //   id: 1,
+    //   title: "Employer",
+    //   path: "/employer",  // employer
+    //   description: "Create and Manage courses",
+    // },
+    // {
+    //   id: 2,
+    //   title: "Listener",
+    //   path: "/listener", // listener
+    //   description: "Learning and Updating Skills",
+    // },
     {
       id: 3,
       title: "Blog",
@@ -59,6 +60,10 @@ const Navbar = () => {
 
   const { theme, setTheme } = useTheme();
 
+  const router = useRouter();
+
+  console.log(" router ", router.pathname);
+   
   return (
     <header className="w-full fixed z-50">
       <nav className="container  flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-0">
@@ -149,7 +154,10 @@ const Navbar = () => {
                 key={index}>
                 <Link
                   href={item.path}
-                  className="inline-block px-4 py-2 text-lg font-semibold text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800"
+                  className={`inline-block px-4 py-2 text-lg font-semibold text-gray-800 no-underline rounded-md dark:text-gray-200 hover:text-indigo-500 focus:text-indigo-500 focus:bg-indigo-100 focus:outline-none dark:focus:bg-gray-800  
+                    ${item.path === router.pathname ? "bg-indigo-100" : "" }
+                    
+                    `}
                 >
                   {item.title}
                 </Link>
@@ -170,7 +178,6 @@ const Navbar = () => {
 
         <div className="hidden mr-3 space-x-4 lg:flex nav__item">
           <ThemeChanger />
-
           <LangagesChanger />
         </div>
       </nav>
