@@ -40,7 +40,7 @@ const  DesignPage = () => {
 
             </Container>
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

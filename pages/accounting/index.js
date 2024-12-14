@@ -40,7 +40,7 @@ const Accounting = () => {
 
             </Container>
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )

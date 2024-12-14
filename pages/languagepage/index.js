@@ -42,7 +42,7 @@ const LanguagePage = () => {
 
             </Container>
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )
