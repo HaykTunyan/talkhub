@@ -155,7 +155,7 @@ const DevPage = () => {
 
             </Container>
 
-            <Footer />
+            {/* <Footer /> */}
 
         </div>
     )
